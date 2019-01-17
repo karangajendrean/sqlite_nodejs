@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/eddygonzalez9708/sqlite_nodejs/issues"
   },
-  "homepage": "https://github.com/eddygonzalez9708/sqlite_nodejs#readme"
+  "homepage": "https://github.com/eddygonzalez9708/sqlite_nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "nodemon": "^1.18.9",
+    "sqlite3": "^4.0.6"
+  }
 }
