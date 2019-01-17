@@ -1,0 +1,20 @@
+{
+  "name": "sqlite_nodejs",
+  "version": "1.0.0",
+  "description": "Experimenting with Node.js and Sqlite3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddygonzalez9708/sqlite_nodejs.git"
+  },
+  "author": "Edward Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddygonzalez9708/sqlite_nodejs/issues"
+  },
+  "homepage": "https://github.com/eddygonzalez9708/sqlite_nodejs#readme"
+}
