@@ -1,7 +1,9 @@
 const express = require('express')
 
+const store = require('./store')
+
 // middleware to handle HTTP POST request
-// extract the entire body portion of an incoming request and exposes
+// extract the entire body portion of an incoming request and exposes it on req.body
 const bodyParser = require('body-parser')
 
 const app = express()
@@ -14,9 +16,17 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-  res.render('pages/index', {
-    title: 'NODEJS - SQLITE DEMO'
-  })
+  let students = []
+
+  store.studentList()
+    .then((req, respond) => {
+      students = req
+
+      res.render('pages/index', {
+        title: 'NODEJS - SQLITE DEMO',
+        students: students
+      })
+    })
 })
 
 app.listen(app.get('port'), () => {
