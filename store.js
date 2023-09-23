@@ -10,5 +10,12 @@ module.exports = {
   studentList () {
     console.log('retrieving students')
     return knex('students').select('*')
+    
   }
 }
+const knex = require('knex')({
+  client: 'mysql',
+  connection: {
+    port : 3306,
+  }
+});
